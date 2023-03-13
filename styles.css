@@ -1,0 +1,42 @@
+
+/* Note I did not use canvas for my javascript this is just
+   to style the app view.  */
+canvas {
+    border: 5px solid gray;
+}
+
+a {
+    font-family: 'JetBrains Mono', monospace;
+}
+a:hover{
+    font-family: 'JetBrains Mono', monospace;
+    color: skyblue;
+}
+a:visited {
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+}
+p {
+    text-align: center;
+    width: 60%;
+    font-family: 'JetBrains Mono', monospace;
+}
+h2 {
+    font-family: 'JetBrains Mono', monospace;
+    color: skyblue;
+    background-color: rgb(54, 54, 54);
+}
+h1 {
+    font-family: 'JetBrains Mono', monospace;
+    color: skyblue;
+    background-color: rgb(54, 54, 54);
+}
+ul {
+    color: skyblue;
+    background-color: rgb(54, 54, 54);
+    list-style-type: none;
+}
+footer {
+    background-color: rgb(54, 54, 54);
+    color:white;
+}
