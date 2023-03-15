@@ -37,19 +37,18 @@ let startScene;
 // sounds
 let atmospheric,death, hurt, finalMusic, shot, hit, monster, monsterHurt, boss, boom, ready;
 let gameScene,scoreLabel,lifeLabel,fireballSound;
-let gameOverScene;
-let player;
+// misc global variables
+let gameOverScene, player, crosshair, explosionTextures,finalScene,theScurged,notificationText1,notificationText2,bossTag,backgroundRender,gameOverText;
+
 let bloodTexture = [];
 let bloodFloor;
 let bulletFloor;
-let crosshair;
 let bullets = [];
 let enemies = [];
 let gunTurrets = [];
 let barricades = [];
 let fireballs = [];
 let explosions = [];
-let explosionTextures;
 let kills = 0;
 let totalKills = 0;
 let life = 10;
@@ -58,16 +57,10 @@ let paused = true;
 let finalStage = false;
 let barricadeAvailable = false;
 let sentryAvailable = false;
-let finalScene;
-let theScurged;
-let notificationText1;
-let notificationText2;
 let timeInterval = 0;
 let numLock = 0;
 let numLock2 = 0;
-let bossTag;
-let backgroundRender;
-let gameOverText;
+
 //let menuSound = PIXI.sound.from('sounds/zapsplat_atmospheric.mp3');
 
 function loadSounds(){
@@ -450,7 +443,7 @@ function loadMap() {
             }
         }
         
-        // Finalstage tags.
+        // Final stage tags.
 	if (finalStage) {
         theScurged.rotation = theScurged.faceTarget(player.x, player.y);
         theScurged.gotoTarget(player);
@@ -679,7 +672,7 @@ function loadMap() {
             numLock++;
         }
     }
-    // Doesn't work
+    /*
     function createExplosion(x, y, frameWidth, frameHeight) {
         let w2 = frameWidth/2;
         let h2 = frameHeight/2;
@@ -693,5 +686,6 @@ function loadMap() {
         gameScene.addChild(expl);
         boom.play();
     }
+    */
 
    
